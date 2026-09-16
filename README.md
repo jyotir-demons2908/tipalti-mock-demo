@@ -41,7 +41,7 @@ posts is still our own stub — it only has to match the agent's Tipalti Post co
 **Get the code**
 
 ```bash
-git clone https://github.com/[YOUR_GH_USER]/tipalti-mock-demo.git
+git clone https://github.com/jyotir-demons2908/tipalti-mock-demo.git
 cd tipalti-mock-demo
 ```
 
