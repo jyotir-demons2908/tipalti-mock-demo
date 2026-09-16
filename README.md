@@ -63,12 +63,22 @@ port with `lsof -ti tcp:5055 | xargs kill` and start again.
 ngrok http 5055
 ```
 
-Copy the `https://<subdomain>.ngrok-free.app` URL and set it in the agent's **Tipalti Post**
-tool, in `TIPALTI_MOCK_URL`, **with `/soap` on the end**:
+Copy the `https://<subdomain>.ngrok-free.app` URL ngrok prints and set it in the agent's
+**Tipalti Post** tool, in `TIPALTI_MOCK_URL`, **with `/soap` on the end**:
 
 ```
 TIPALTI_MOCK_URL = "https://<subdomain>.ngrok-free.app/soap"
 ```
+
+**This demo's tunnel** (a reserved ngrok domain for the AOSN setup — use this exact value on
+that machine):
+
+```
+TIPALTI_MOCK_URL = "https://obtuse-proximity-osmosis.ngrok-free.dev/soap"
+```
+
+> If you run your own `ngrok http 5055` you'll get a different URL — use yours. The forwarding
+> only works while `ngrok http 5055` is running against a live local server on port 5055.
 
 ## Endpoints
 
